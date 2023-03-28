@@ -1,0 +1,25 @@
+
+<div>
+    <a>
+        <button class='button' (click)="gotocat()">Gotocatgeories</button>
+    </a>
+    <pre></pre>
+<div>users with id is::  {{user.id}}</div>
+<div>users with name is:  {{user.name}}</div>
+</div>  <pre></pre>
+<div>
+    <a [routerLink]="['/users',1,'prasanna']" [queryParams]="{page:1 , search:'prasanna'}"
+    [fragment]="'load'" >retrieving data</a>   
+</div>
+<p>users works!</p>
+<ul class="nav flex-column">
+    <li class="nav-item">
+      <a [routerLink]="['/users' ,1,'prasanna']" class="nav-link">get prasanna</a>
+    </li>
+    <li class="nav-item">
+      <a [routerLink]="['/users' ,2,'lakshmi']" class="nav-link">get lakshmi</a>
+    </li>
+    <li class="nav-item">
+      <a [routerLink]="['/users' ,3, 'bobby']" class="nav-link">get bobby</a>
+    </li>
+</ul>
